@@ -1,0 +1,424 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family:'roboto', sans-serif;
+    margin: 0;
+    background-color: #fdfdfdfa;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+
+
+button{
+    font-size: 1em;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+
+.container a:hover {
+    border-bottom: 2px solid black;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+    
+}
+
+header{
+    background-color: rgb(255, 255, 255);
+}
+
+header .logo{
+    margin: 0px;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: black;
+    font-size: 1.6em;
+}
+
+
+header .container{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(80, 80, 80);
+}
+
+header a:hover{
+    color: rgb(0, 0, 0);
+}
+
+
+#hero {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 45vh;
+    color: rgba(252, 252, 252, 0.897);
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../images/principal2.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+}
+
+#hero h1 {
+    color: rgb(255, 255, 255);
+
+}
+
+
+#populares .conteiner{
+    text-align: center;
+    padding-bottom: 25px;
+    margin-top: 0px;
+   
+}
+
+#populares h2{
+    margin-bottom: 25px;
+    font-size: 3.2em;
+    color: black;
+    font-weight: bold;
+}
+
+#monitor .conteiner {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#monitor h2 {
+    color: rgb(24, 19, 0);
+    font-weight: bold;
+}
+
+
+
+#accesorios {
+    background-color: rgba(44, 44, 44, 0.986);
+    color: rgb(252, 252, 252);
+    text-align: center;
+}
+
+#accesorios .conteiner {
+    padding: 200px 12px;
+    margin-top: 50px;
+}
+
+#accesorios h2 {
+    margin-top: 0;
+    font-size: 2.2em;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    
+}
+
+#accesorios p {
+    display: none;
+}
+
+#accesorios .carte2 {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carte2:first-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../images/fundas.webp);
+}
+
+.carte2:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../images/accesorio3.webp);
+}
+
+.carte2:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../images/accesorio4.jpg);
+}
+
+
+
+
+#hero2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 40vh;
+    color: rgba(252, 252, 252, 0.897);
+    background-image:  url(../images/banner.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+}
+
+
+#hero2{
+   margin-top:70px
+}
+
+
+#hero2 h2 {
+    color: rgb(253, 253, 253);
+    font-family:'roboto', sans-serif;
+}
+
+#footer {
+    background-color: rgb(10, 9, 9);
+    
+}
+
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: rgb(56, 56, 56);
+}
+
+footer .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+#nav .navbar-brand {
+    font-family: 'roboto', sans-serif;
+    margin: 0;
+}
+
+#carousel-caption .titulo{
+    display: flex;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+@media(min-width:720px) {
+
+   header{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    
+    
+   }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-right: 5px;
+    }
+    #hero {
+        margin-left: 100px;
+        margin-right: 100px;
+        
+    }
+
+    #hero h1 {
+        font-size: 4.55em;
+    }
+
+    #carouselExampleCaptions{
+        margin-left: 480px;
+        margin-right: 480px;
+        
+        
+    }
+
+    .carousel-item{
+        border-radius: 7px;
+    }
+
+    #monitor .conteiner {
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 120px;
+        margin-right: 120px;
+
+    }
+
+    #monitor .texto {
+        width: 50%;
+        max-width: 600px;
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+    }
+
+    #monitor h2 {
+        margin-top: 0px;
+    }
+
+    #monitor .img-conteiner {
+        background-image: url(../images/samsung-qn91a-30.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 450px;
+        width: 750px;
+    }
+
+    #populares .conteiner{
+        text-align: center;
+        padding-bottom: 90px;
+        margin-top: 0px;
+    }
+
+    #accesorios {
+        border-radius: 1px;
+
+    }
+
+    #accesorios .accesorios {
+        display: flex;
+        justify-content: center;
+    }
+
+    #accesorios p {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    #accesorios h3 {
+        margin-top: 0;
+    }
+
+    #accesorios h2{
+        font-size: 3em;
+    }
+
+    #accesorios .carte2 {
+        padding: 50px;
+        box-shadow: 2px 2px 10px rgb(0, 0, 0);
+        
+    }
+
+    #hero2 .contenedor{
+        margin-right: 850px;
+    }
+
+    
+    #hero2 {
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 100px;
+    }
+
+    #hero2 h2 {
+        font-size: 2.55em;
+        font-weight: bolder;
+        display: flex;
+    }
+
+    #hero2 p{
+        display: flex;
+    }
+
+    #conocenos .texto {
+        width: 50%;
+        max-width: 600px;
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+    }
+
+    #conocenos h2{
+        font-size: 2.55em;
+        margin-top: 0px;
+        padding-top: 20px;
+        font-weight: bold;
+    }
+
+    #conocenos .conteiner{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 100px;
+        
+        padding-bottom: 20px;
+    }
+   
+
+    #conocenos .img-conteiner {
+        background-image: url(../images/soporte.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 450px;
+        width: 750px;
+        margin-top: 35px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
