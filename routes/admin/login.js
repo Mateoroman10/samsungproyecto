@@ -8,6 +8,14 @@ router.get('/', function(req, res, next) {
     });
   });
 
+  /*para destruir variables de session*/
+  router.get('/logout', function (req,res,next){
+    req.session.destroy(); //destruir
+    res.render('admin/login', {
+        layout: 'admin/layout'
+    });
+  });
+
   router.post('/', async (req, res, next) =>{
     try {
         console.log(req.body);
@@ -19,6 +27,9 @@ router.get('/', function(req, res, next) {
         var data = await usuariosModel.getUserAndPassword (usuario, password);
 
         if (data != undefined){
+            req.session.id_usuario = data.id;
+            req.session.nombre = data.usuario;
+
             res.redirect('/admin/novedades');
         } else{
             res.render('admin/login',{

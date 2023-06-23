@@ -1,171 +1,254 @@
-    <!--  INICIO -->
+<!--  INICIO -->
 
-    <section id="hero">
-        <h1>La evolucion de la grandeza</h1>
+<section id="hero">
+    <h1>La evolucion de la grandeza</h1>
 
-    </section>
-
-
-
-    <!--  MONITOR -->
-
-    <secction id="monitor">
-        <div class="conteiner">
-            <div class="img-conteiner"></div>
-            <div class="texto">
-                <h2>Neo G9 49" DQHD</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero corrupti dolore minima quo. Aliquam
-                    harum
-                    quos quibusdam minus totam consequatur, error numquam explicabo et deleniti dolores est atque nihil
-                    ab!
-                </p>
-                <button class="btn btn-dark">Comprar ➚</button>
-            </div>
-        </div>
-    </secction>
+</section>
 
 
-    <!--  POPULARES -->
 
-    <section id="populares">
-        <div class="conteiner">
-            <h2>Elegidos del mes</h2>
 
-            <div id="carouselExampleCaptions" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
+<!--inicio novedades-->
+<section id="novedad-testimonio">
+<div class="novedades">
+<div class="row my-3">;
+    <div id="novedades" class="col-md-5 offset-md-2 py-3 scroll_section">
+        <h2 style=" font-weight: bolder;  font-family: 'roboto', sans-serif;">Novedades</h2>
+        <ul class="lista-novedades">
+            {{#each novedades}}
+            <li>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal{{id}}"><img
+                        src="/images/novedades2.jpg">{{titulo}}</a>
+            </li>
+            {{/each}}
+        </ul>
+
+
+    </div> <!-- cierra novedades -->
+
+    <!-- Modal -->
+    {{#each novedades}}
+    <div class="modal fade" id="exampleModal{{id}}" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 style="font-weight: bolder; font-size: 2.5em;" id="exampleModalLabel">{{titulo}}</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active ">
-                        <img src="images/s23ultra.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3 style="'roboto', sans-serif;">Samsung S23 Ultra</h3>
-                            <p style="color: rgb(212, 212, 212); font-weight: bold">Cualquier bolígrafo puede escribir
-                                palabras, pero el S te ayuda a capturarlas.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/s21 ultra.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3 style="'roboto', sans-serif;">Samsung S21</h3>
-                            <p style="color: rgb(53, 53, 53); font-weight: bold">Una pantalla envolvente tan increíble
-                                que olvidarás lo que es real.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/5_product_galaxy_zfold4_graygreen_spen-1.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3 style="'roboto', sans-serif;">Galaxy Z Fold</h3>
-                            <p style="color: rgb(228, 228, 228); font-weight: bold;">Hacé más con una mano con la
-                                pantalla de 6.2 pulgadas.</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-    </section>
+                <div class="modal-body">
+                    <h4 style="font-weight: bolder; font-size: 1.5em;  font-family: Lucida Bright">{{subtitulo}}</h4>
 
-    <!--  ACCESORIOS -->
-
-    <section id="accesorios">
-        <div class="conteiner">
-            <h2>Nuestros accesorios</h2>
-
-            <div class="accesorios">
-                <div class="carte2">
-                    <h3>Fundas</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos omnis accusamus perspiciatis fugit
-                        animi
-                        asperiores reprehenderit fugiat laborum, dolore quae aliquid iste consectetur alias facilis
-                        consequatur
-                        aperiam. Voluptatum, quidem quia?</p>
-                    <button class="btn btn-dark">Comprar ➚</button>
-                </div>
-                <div class="carte2">
-                    <h3>Samsung galaxy buds</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos omnis accusamus perspiciatis fugit
-                        animi
-                        asperiores reprehenderit fugiat laborum, dolore quae aliquid iste consectetur alias facilis
-                        consequatur
-                        aperiam. Voluptatum, quidem quia?</p>
-                    <button class="btn btn-dark">Comprar ➚</button>
-                </div>
-                <div class="carte2">
-                    <h3>Samsung galaxy watch</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos omnis accusamus perspiciatis fugit
-                        animi
-                        asperiores reprehenderit fugiat laborum, dolore quae aliquid iste consectetur alias facilis
-                        consequatur
-                        aperiam. Voluptatum, quidem quia?</p>
-                    <button class="btn btn-dark">Comprar ➚</button>
+                    <p>{{cuerpo}}</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    {{/each}}
+  <!--Fin Modal -->
 
-    <!--  PUBLICIDAD -->
+ <div class="col-md-3 my-3">
+    <div class="rounded py-5 testimonios">
+        <h2 class="text-center" style="font-family: 'roboto', sans-serif;  font-weight: bolder;">Testimonios</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    arial-current="true" aria-label="slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="testimonio">
+                        <h5 style="font-weight: bolder;">"La mejor atencion"</h5>
+                        <p>Valentin, D'angelo</p>
+                    </div>
 
-    <section id="hero2">
-        <h2 class="contenedor">Lo nuevo en tecnologias</h2>
-        
-    </section>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonio">
+                        <h5 style="font-weight: bolder;">"Los mejores precios!!"</h5>
+                        <p>Paula, Lopez</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonio">
+                        <h5 style="font-weight: bolder;">"Que buen servicio."</h5>
+                        <p>Ester, Perez</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
 
- <!--  CONTACTANOS -->
+        </div>
+    </div> <!--cierra lo de testimonios-->
+</div> <!-- cierra div con id novedades-->
+</div>
+</section>
 
-    
-<div id="conocenos">    
- <div class="conteiner">
-    <div class="img-conteiner"></div>
-    <div class="texto">
-    <h2>contactanos</h2>
-    <form class="row g-3" action="/" method="post">
-        <div class="col-md-6">
-            <label for="nombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="nombre" name="nombre">
+
+
+
+<!--  MONITOR -->
+
+<secction id="monitor">
+    <div class="conteiner">
+        <div class="img-conteiner"></div>
+        <div class="texto">
+            <h2>Neo G9 49" DQHD</h2>
+            <p>Odyssey Neo G9 ofrece una pantalla ultra ancha de 49 pulgadas con una relación de aspecto de 32:9. Este monitor cuenta con una resolución Dual Quad High Definition (DQHD; resolución de 5.120×1.440). Nos ofrece una frecuencia de actualización de 240Hz y un tiempo de respuesta de 1ms.
+            </p>
+             <a href="https://shop.samsung.com/ar/lanzamiento-neoqled-8k-2023?cid=ar_ow_brand_samsung_none_gmb-vd_ecommerce_none_generic&utm_source=brand&utm_medium=gbm-banner&utm_campaign=gbm-vd"><button class="btn btn-dark">Comprar ➚</button></a>
         </div>
-        <div class="col-md-6">
-            <label for="apellido" class="form-label">Apellido</label>
-            <input type="text" class="form-control" id="apellido" name="apellido">
+    </div>
+</secction>
+
+
+<!--  POPULARES -->
+
+<section id="populares">
+    <div class="conteiner">
+        <h2>Elegidos del mes</h2>
+
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active ">
+                    <img src="images/s23ultra.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 style="'roboto', sans-serif;">Samsung S23 Ultra</h3>
+                        <p style="color: rgb(212, 212, 212); font-weight: bold">Cualquier bolígrafo puede escribir
+                            palabras, pero el S te ayuda a capturarlas.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/s21 ultra.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 style="'roboto', sans-serif;">Samsung S21</h3>
+                        <p style="color: rgb(53, 53, 53); font-weight: bold">Una pantalla envolvente tan increíble
+                            que olvidarás lo que es real.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/5_product_galaxy_zfold4_graygreen_spen-1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 style="'roboto', sans-serif;">Galaxy Z Fold</h3>
+                        <p style="color: rgb(228, 228, 228); font-weight: bold;">Hacé más con una mano con la
+                            pantalla de 6.2 pulgadas.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div class="col-12">
-            <label for="email" class="form-label">Email</label>
-            <input type="text" class="form-control" id="email" placeholder="email@email.com" name="email">
+</section>
+
+<!--  ACCESORIOS -->
+
+<section id="accesorios">
+    <div class="conteiner">
+        <h2>Nuestros accesorios</h2>
+
+        <div class="accesorios">
+            <div class="carte2">
+                <h3>Fundas</h3>
+                <p>Fabricado con elegancia, el estuche de cuero genuino agrega calidad y estilo adicionales a tu smartphone.</p>
+                <a href="https://www.samsung.com/ar/mobile-accessories/all-mobile-accessories/?case+smartphone"><button class="btn btn-dark">Comprar ➚</button></a>
+            </div>
+            <div class="carte2">
+                <h3>Samsung galaxy buds</h3>
+                <p>Como auriculares de alta gama, los Samsung Galaxy Buds parecen cumplir todas las expectativas.</p>
+                <a href="https://www.samsung.com/ar/audio-sound/galaxy-buds/"><button class="btn btn-dark">Comprar ➚</button></a>
+            </div>
+            <div class="carte2">
+                <h3>Samsung galaxy watch</h3>
+                <p>Elegí tu tono favorito para cambiar la correa de tu Galaxy Watch o dale un nuevo estilo a tu Galaxy Watch.</p>
+                <a href="https://www.samsung.com/ar/watches/"><button class="btn btn-dark">Comprar ➚</button></a>
+            </div>
         </div>
-        <div class="col-12">
-            <label for="Tel" class="form-label">Tel</label>
-            <input type="text" class="form-control" id="tel" placeholder="..." name="tel">
-        </div>    
-        <div class="col-12">
-            <label for="mensaje" class="form-label">Mensaje</label>
-            <textarea class="form-control" id="mensaje" rows="3" name="mensaje"></textarea>
+    </div>
+</section>
+
+<!--  PUBLICIDAD -->
+
+<section id="hero2">
+    <h2 class="contenedor">Lo nuevo en tecnologias</h2>
+
+</section>
+
+
+
+
+
+
+<!--  CONTACTANOS -->
+
+
+<div id="conocenos">
+    <div class="conteiner">
+        <div class="img-conteiner"></div>
+        <div class="texto">
+            <h2>contactanos</h2>
+            <form class="row g-3" action="/" method="post">
+                <div class="col-md-6">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre">
+                </div>
+                <div class="col-md-6">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido">
+                </div>
+                <div class="col-12">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="email" placeholder="email@email.com" name="email">
+                </div>
+                <div class="col-12">
+                    <label for="Tel" class="form-label">Tel</label>
+                    <input type="text" class="form-control" id="tel" placeholder="..." name="tel">
+                </div>
+                <div class="col-12">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="3" name="mensaje"></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-dark">Enviar</button>
+                </div>
+            </form>
         </div>
-        <div class="col-12">
-         <button type="submit" class="btn btn-dark">Enviar</button>
-        </div>
-    </form>
- </div>
-</div> 
+    </div>
 </div>
 
 <!--  FOOTER -->
 
 <footer>
-        <div class="container">
-            <p>Copyright© 1995-2023 Samsung.</p>
+    <div class="container">
+        <p>Copyright© 1995-2023 Samsung.</p>
 
-        </div>
-    </footer>
+    </div>
+</footer>

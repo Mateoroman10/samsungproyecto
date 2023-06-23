@@ -15,6 +15,9 @@
 
                 <button type="submit" class="btn btn-secondary">Enviar</button>
             </form>
+            {{#if error}}
+            <p>Usuario o contraseña incorrecto!</p>
+            {{/if}}
         </div>
     </div>
 </div>
